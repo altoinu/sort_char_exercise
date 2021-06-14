@@ -82,3 +82,20 @@ export const sortLetters = function(text) {
 	return quicksort(text);
 
 };
+
+export const main = function(text) {
+	
+	console.log(text);
+
+	// remove punctuations (replace everything that's not a letter)
+	let sortTargetText = removeNonLetters(text);
+	// lower case
+	sortTargetText = convertToLowerCase(sortTargetText);
+
+	let sortCompletedText = sortLetters(sortTargetText);
+	console.log(sortCompletedText);
+
+	return sortCompletedText;
+	
+};
+

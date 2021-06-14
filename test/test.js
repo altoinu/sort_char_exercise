@@ -3,7 +3,8 @@ import assert from 'assert';
 import {
 	removeNonLetters,
 	convertToLowerCase,
-	sortLetters
+	sortLetters,
+	main
 } from '../src/index.js';
 
 
@@ -30,5 +31,10 @@ describe('sortLetters', () => {
 });
 
 describe('main', () => {
-	it.skip('Ignore punctuation, and map upper case to lower case, then sort');
+	it('Ignore punctuation, and map upper case to lower case, then sort', () => {
+		assert.equal(
+			main('When not studying nuclear physics, Bambi likes to play beach volleyball.'),
+			'aaaaabbbbcccdeeeeeghhhiiiiklllllllmnnnnooopprsssstttuuvwyyyy'
+		)
+	});
 });
