@@ -1,0 +1,14 @@
+{
+  "name": "sort_char_exercise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^9.0.0"
+  }
+}
