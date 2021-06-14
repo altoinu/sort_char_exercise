@@ -2,7 +2,8 @@
 import assert from 'assert';
 import {
 	removeNonLetters,
-	convertToLowerCase
+	convertToLowerCase,
+	sortLetters
 } from '../src/index.js';
 
 
@@ -17,4 +18,9 @@ describe('convertToLowerCase', () => {
 		assert.equal(convertToLowerCase('AAABBBCCC'), 'aaabbbccc');
 		assert.equal(convertToLowerCase('Hello! World? F@o#o$B%a^r'), 'hello! world? f@o#o$b%a^r');
 	})
+});
+
+describe('sortLetters', () => {
+	it.skip('should sort letters', () => {
+	});
 });

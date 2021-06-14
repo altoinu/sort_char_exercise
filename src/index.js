@@ -1,11 +1,15 @@
-export const removeNonLetters = function(value) {
+export const removeNonLetters = function(text) {
 
-	return value ? value.replace(/[^\w]/gi, '') : '';
+	return text ? text.replace(/[^\w]/gi, '') : '';
 
 };
 
 export const convertToLowerCase = function(text) {
 
 	return text ? text.toLowerCase() : null;
+
+};
+
+export const sortLetters = function(text) {
 
 };
