@@ -13,8 +13,8 @@ describe('removeNonLetters', () => {
 });
 
 describe('convertToLowerCase', () => {
-	it.skip('should convert to lower letter characters', () => {
-		assert.equal(convertToLowerCase('AAABBBCCC', 'aaabbbccc'));
+	it('should convert to lower letter characters', () => {
+		assert.equal(convertToLowerCase('AAABBBCCC'), 'aaabbbccc');
 		assert.equal(convertToLowerCase('Hello! World? F@o#o$B%a^r'), 'hello! world? f@o#o$b%a^r');
 	})
 });
