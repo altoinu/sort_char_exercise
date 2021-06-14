@@ -28,3 +28,7 @@ describe('sortLetters', () => {
 		)
 	});
 });
+
+describe('main', () => {
+	it.skip('Ignore punctuation, and map upper case to lower case, then sort');
+});
