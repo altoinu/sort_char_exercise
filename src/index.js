@@ -79,4 +79,6 @@ function quicksort(text) {
 
 export const sortLetters = function(text) {
 
+	return quicksort(text);
+
 };

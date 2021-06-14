@@ -21,6 +21,10 @@ describe('convertToLowerCase', () => {
 });
 
 describe('sortLetters', () => {
-	it.skip('should sort letters', () => {
+	it('should sort letters', () => {
+		assert.equal(
+			sortLetters('When not studying nuclear physics, Bambi likes to play beach volleyball.'),
+			'          ,.BWaaaaabbbcccdeeeeeghhhiiiiklllllllmnnnnooopprsssstttuuvyyyy'
+		)
 	});
 });
